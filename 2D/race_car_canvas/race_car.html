@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta lang="en-US" />
+		<meta charset="utf-8"/>
+		<title>
+			Race Car
+		</title>
+		<link rel="stylesheet" href="race_car.css"/>
+
+		<link rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous">
+		
+		<link rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+			integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+			crossorigin="anonymous">
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous">
+		</script>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"
+				integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+				crossorigin="anonymous">
+		</script>
+	</head>
+	
+	<body>
+		<div id="header">
+			<div id="score_container">
+				Score: <span id="score">0</span>
+			</div>
+			<div id="level_container">
+				Level: <span id="level">1</span>
+			</div>
+		</div>
+		<div id="container">
+			<div id="line_left" class="line"></div>
+			<div id="line_1" class="line"></div>
+			<div id="line_2" class="line"></div>
+			<div id="line_3" class="line"></div>
+			<div id="line_4" class="line"></div>
+			<div id="line_right" class="line"></div>
+
+			<div id="car" class="car">
+				<div class="f_glass"></div>
+				<div class="b_glass"></div>
+				<div id="f_light_l" class="f_light_l"></div>
+				<div id="f_light_r" class="f_light_r"></div>
+				<div id="b_light_l" class="b_light_l"></div>
+				<div id="b_light_r" class="b_light_r"></div>
+				<div class="num">P</div>
+				<div class="f_tyre_l"></div>
+				<div class="f_tyre_r"></div>
+				<div class="b_tyre_l"></div>
+				<div class="b_tyre_r"></div>
+			</div>
+
+			<div id="car_1" class="car">
+				<div class="f_glass"></div>
+				<div class="b_glass"></div>
+				<div class="f_light_l"></div>
+				<div class="f_light_r"></div>
+				<div class="f_tyre_l"></div>
+				<div class="f_tyre_r"></div>
+				<div class="b_tyre_l"></div>
+				<div class="b_tyre_r"></div>
+			</div>
+
+			<div id="car_2" class="car">
+				<div class="f_glass"></div>
+				<div class="b_glass"></div>
+				<div class="f_light_l"></div>
+				<div class="f_light_r"></div>
+				<div class="f_tyre_l"></div>
+				<div class="f_tyre_r"></div>
+				<div class="b_tyre_l"></div>
+				<div class="b_tyre_r"></div>
+			</div>
+
+			<div id="car_3" class="car">
+				<div class="f_glass"></div>
+				<div class="b_glass"></div>
+				<div class="f_light_l"></div>
+				<div class="f_light_r"></div>
+				<div class="f_tyre_l"></div>
+				<div class="f_tyre_r"></div>
+				<div class="b_tyre_l"></div>
+				<div class="b_tyre_r"></div>
+			</div>
+
+			<div id="restart_div">
+				<div>
+					<button id="restart">
+						<span>Restart</span><br />
+						<small class="small_text"><span>(Press Enter)</span></small>
+					</button>
+				</div>
+				<br/>
+				<div id="enter_div">
+					<button id="enter">
+						<span>Enter</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="nav_btn">
+			<span id="nav_left" class="nav fas fa-arrow-left"></span>
+			<span id="nav_up" class="nav fas fa-arrow-up"></span>
+			<span id="nav_down" class="nav fas fa-arrow-down"></span>
+			<span id="nav_right" class="nav fas fa-arrow-right"></span>
+		</div>
+
+		<script type="text/javascript" src="race_car.js"></script>
+		
+	</body>
+
+</html>
